@@ -31,6 +31,5 @@ export class WsJwtGuard implements CanActivate {
     const { authorization } = client.handshake.headers;
     const token = authorization.split(' ')[1];
     Logger.log(token);
-    throw new Error('okok');
   }
 }
